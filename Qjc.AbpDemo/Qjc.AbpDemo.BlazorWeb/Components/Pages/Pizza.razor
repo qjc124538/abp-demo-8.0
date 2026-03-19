@@ -1,0 +1,37 @@
+﻿@page "/pizza"
+@using Qjc.AbpDemo.BlazorWeb.Data
+@inject PizzaService pizzaService
+
+<PageTitle>Pizza</PageTitle>
+
+<table>
+    <thead>
+        <tr>
+            <th>Pizza Name</th>
+            <th>Description</th>
+            <th>Vegetarian?</th>
+            <th>Vegan?</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var pizza in pizzaSpecials)
+        {
+            <tr>
+                <td>@pizza.Name</td>
+                <td>@pizza.Description</td>
+                <td>@pizza.Vegetarian</td>
+                <td>@pizza.Vegan</td>
+                <td>@pizza.Price</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    List<PizzaSpecial> pizzaSpecials = new List<PizzaSpecial>();
+    protected override async Task OnInitializedAsync()
+    {
+        pizzaSpecials = await pizzaService.GetPizzasAsync();
+    }
+}
