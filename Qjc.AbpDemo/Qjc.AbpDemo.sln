@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37027.9 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qjc.AbpDemo.BlazorWeb", "Qjc.AbpDemo.BlazorWeb\Qjc.AbpDemo.BlazorWeb.csproj", "{3F795476-B468-435B-BBE3-CE40DED82464}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F795476-B468-435B-BBE3-CE40DED82464}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F795476-B468-435B-BBE3-CE40DED82464}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F795476-B468-435B-BBE3-CE40DED82464}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F795476-B468-435B-BBE3-CE40DED82464}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B8694148-0A46-4A4F-B48F-C4ED09B5BB92}
+	EndGlobalSection
+EndGlobal
